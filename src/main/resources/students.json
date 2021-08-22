@@ -1,0 +1,770 @@
+[
+  {
+    "studentId": 1,
+    "studentName": "A A Yuvaraj",
+    "fatherName": "A G Arrappan Modali",
+    "gender": "Male",
+    "mobile": "9542274920",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 2,
+    "studentName": "A Aishwariya",
+    "fatherName": "A Surya Prakash",
+    "gender": "Female",
+    "mobile": "9290271687",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10655,
+    "studentName": "Boya Umashankar",
+    "fatherName": "Boya Venkataiah",
+    "gender": "Male",
+    "mobile": "9030091723",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10656,
+    "studentName": "Boya Umesh",
+    "fatherName": "Boya Surya Narayana",
+    "gender": "Male",
+    "mobile": "8985548482",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10657,
+    "studentName": "Boya Varsha Reddy",
+    "fatherName": "Boya Mahender Reddy",
+    "gender": "Female",
+    "mobile": "9866901245",
+    "category": "OC"
+  },
+  {
+    "studentId": 10658,
+    "studentName": "Boya Veera Sudhakar",
+    "fatherName": "B Narasimhudu",
+    "gender": "Male",
+    "mobile": "9177568103",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10659,
+    "studentName": "Boya Venkatanaidu",
+    "fatherName": "Boya Narayana",
+    "gender": "Male",
+    "mobile": "9908603996",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10660,
+    "studentName": "Boya Vinod Kumar",
+    "fatherName": "B Narayanappa",
+    "gender": "Male",
+    "mobile": "9704292173",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10661,
+    "studentName": "Boya Yeswanth Kumar",
+    "fatherName": "Boya Sree Ramulu",
+    "gender": "Male",
+    "mobile": "9959022989",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10662,
+    "studentName": "Boyalapalle Kingsley",
+    "fatherName": "Boyalapalle John Wilson",
+    "gender": "Male",
+    "mobile": "9731668452",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10663,
+    "studentName": "Boyambharath Kumar",
+    "fatherName": "Boya Shankar",
+    "gender": "Male",
+    "mobile": "9010780579",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10664,
+    "studentName": "Boyanapalli Vaishnavi",
+    "fatherName": "Boyanapalli Venkateswara Rao",
+    "gender": "Female",
+    "mobile": "9885547097",
+    "category": "OC"
+  },
+  {
+    "studentId": 10665,
+    "studentName": "Boyannagari Lavanya",
+    "fatherName": "Boyannagari Srinivas",
+    "gender": "Female",
+    "mobile": "9849092509",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10666,
+    "studentName": "Boyanpally Pranathi",
+    "fatherName": "Boyanpally Ranga Rao",
+    "gender": "Female",
+    "mobile": "9948899588",
+    "category": "OC"
+  },
+  {
+    "studentId": 10667,
+    "studentName": "Boyapalle Thanuja Reddy",
+    "fatherName": "B Narendra Natha Reddy",
+    "gender": "Female",
+    "mobile": "7416641564",
+    "category": "OC"
+  },
+  {
+    "studentId": 10668,
+    "studentName": "Boyapalli Mallika",
+    "fatherName": "Boyapalli Gopalreddy",
+    "gender": "Female",
+    "mobile": "9885745551",
+    "category": "OC"
+  },
+  {
+    "studentId": 10669,
+    "studentName": "Boyapalli Neelima",
+    "fatherName": "B Sudhakarnaidu",
+    "gender": "Female",
+    "mobile": "8790191407",
+    "category": "OC"
+  },
+  {
+    "studentId": 10670,
+    "studentName": "Boyapalli Sukruthi",
+    "fatherName": "Boyapalli Surendergoud",
+    "gender": "Female",
+    "mobile": "9849714189",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10671,
+    "studentName": "Boyapally Anitha",
+    "fatherName": "Boyapally Narsimha",
+    "gender": "Female",
+    "mobile": "9848759531",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10672,
+    "studentName": "Boyapally Harishma",
+    "fatherName": "Boyapally Jayanand",
+    "gender": "Female",
+    "mobile": "9848897912",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10673,
+    "studentName": "Boyapally Nagaraju",
+    "fatherName": "Boyapally Lingaiah",
+    "gender": "Male",
+    "mobile": "9618241233",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10674,
+    "studentName": "Boyapally Revathi Goud",
+    "fatherName": "Boyapally Anjaiah Goud",
+    "gender": "Female",
+    "mobile": "9347127153",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10675,
+    "studentName": "Boyapally Rohini Prasanna",
+    "fatherName": "Boyapally Prasad",
+    "gender": "Female",
+    "mobile": "9440481269",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10676,
+    "studentName": "Boyapally Suresh",
+    "fatherName": "Boyapally Lingaiah",
+    "gender": "Male",
+    "mobile": "9985831847",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10677,
+    "studentName": "Boyapally Tharuni",
+    "fatherName": "Boyapally Laxman Goud",
+    "gender": "Female",
+    "mobile": "9848064440",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10678,
+    "studentName": "Boyapati Bala Tejasri",
+    "fatherName": "Boyapati Fathima Mar Reddy",
+    "gender": "Female",
+    "mobile": "9000991449",
+    "category": "OC"
+  },
+  {
+    "studentId": 10679,
+    "studentName": "Boyapati Bhagyasri Purna Raviteja",
+    "fatherName": "Boyapati Srinivasarao",
+    "gender": "Female",
+    "mobile": "9492605572",
+    "category": "OC"
+  },
+  {
+    "studentId": 10680,
+    "studentName": "Boyapati Chaitra Meghana",
+    "fatherName": "Boyapati Chennaiah",
+    "gender": "Female",
+    "mobile": "9912420503",
+    "category": "OC"
+  },
+  {
+    "studentId": 10681,
+    "studentName": "Boyapati Gangaharshini",
+    "fatherName": "Boyapati Chakrapani Naidu",
+    "gender": "Female",
+    "mobile": "9494073327",
+    "category": "OC"
+  },
+  {
+    "studentId": 10682,
+    "studentName": "Boyapati Hima Sailavathi",
+    "fatherName": "Boyapati Srinivasarao",
+    "gender": "Female",
+    "mobile": "8790028247",
+    "category": "OC"
+  },
+  {
+    "studentId": 10683,
+    "studentName": "Boyapati Lakshmi Ambika",
+    "fatherName": "Boyapati Hanumanthrao",
+    "gender": "Female",
+    "mobile": "9848549619",
+    "category": "OC"
+  },
+  {
+    "studentId": 10684,
+    "studentName": "Boyapati Mythily",
+    "fatherName": "Boyapati Ramanjaneyulu",
+    "gender": "Female",
+    "mobile": "9492584392",
+    "category": "OC"
+  },
+  {
+    "studentId": 10685,
+    "studentName": "Boyapati Naveena",
+    "fatherName": "Boyapati Srinivasa Rao",
+    "gender": "Female",
+    "mobile": "9908919099",
+    "category": "OC"
+  },
+  {
+    "studentId": 10686,
+    "studentName": "Boyapati Rekha",
+    "fatherName": "Boyapati Chenchuramaiah",
+    "gender": "Female",
+    "mobile": "8897436185",
+    "category": "OC"
+  },
+  {
+    "studentId": 10687,
+    "studentName": "Boyapati Revathi",
+    "fatherName": "B Madhavanaidu",
+    "gender": "Female",
+    "mobile": "8790120019",
+    "category": "OC"
+  },
+  {
+    "studentId": 10688,
+    "studentName": "Boyapati Sahithi",
+    "fatherName": "Boyapati Adi Narayana Chowdary",
+    "gender": "Female",
+    "mobile": "9989770220",
+    "category": "OC"
+  },
+  {
+    "studentId": 10689,
+    "studentName": "Boyapati Sindhu",
+    "fatherName": "Boyapati Srinivasarao",
+    "gender": "Female",
+    "mobile": "9963833106",
+    "category": "OC"
+  },
+  {
+    "studentId": 10690,
+    "studentName": "Boyapati Sneha Latha",
+    "fatherName": "Boyapati Peda Dharma Reddy",
+    "gender": "Female",
+    "mobile": "9052124415",
+    "category": "OC"
+  },
+  {
+    "studentId": 10691,
+    "studentName": "Boyapati Sneha Sindhuja",
+    "fatherName": "Boyapati Show Reddy",
+    "gender": "Female",
+    "mobile": "9848950360",
+    "category": "OC"
+  },
+  {
+    "studentId": 10692,
+    "studentName": "Boyapati Srija",
+    "fatherName": "Boyapati Ramarao",
+    "gender": "Female",
+    "mobile": "8985397243",
+    "category": "OC"
+  },
+  {
+    "studentId": 10693,
+    "studentName": "Boyapati Srilatha",
+    "fatherName": "Boyapati Ramarao",
+    "gender": "Female",
+    "mobile": "9948506470",
+    "category": "OC"
+  },
+  {
+    "studentId": 10694,
+    "studentName": "Boyapati Supraja",
+    "fatherName": "Boyapati Venkateswarlu",
+    "gender": "Female",
+    "mobile": "9963505674",
+    "category": "OC"
+  },
+  {
+    "studentId": 10695,
+    "studentName": "Boyapati Suvarna",
+    "fatherName": "Boyapati Kasaiah",
+    "gender": "Female",
+    "mobile": "9966716990",
+    "category": "OC"
+  },
+  {
+    "studentId": 10696,
+    "studentName": "Boyapati Tejasree",
+    "fatherName": "Boyapati Venkata Ramarao",
+    "gender": "Female",
+    "mobile": "9912697674",
+    "category": "OC"
+  },
+  {
+    "studentId": 10697,
+    "studentName": "Boyarevula Shaik Sadiq Basha",
+    "fatherName": "B S Nabi Rasool",
+    "gender": "Male",
+    "mobile": "9441192584",
+    "category": "BC-E"
+  },
+  {
+    "studentId": 10698,
+    "studentName": "Boyena Sirisha Siva Parvathi",
+    "fatherName": "Boyena Ramesh",
+    "gender": "Female",
+    "mobile": "9396897049",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10699,
+    "studentName": "Boyi Girija Rani",
+    "fatherName": "Boyi Chandra Rao",
+    "gender": "Female",
+    "mobile": "9652023058",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10700,
+    "studentName": "Boyi Kalpana Devi",
+    "fatherName": "Boyi Kotaraju",
+    "gender": "Female",
+    "mobile": "8374516941",
+    "category": "OC"
+  },
+  {
+    "studentId": 10701,
+    "studentName": "Boyidapu Leela",
+    "fatherName": "Boyidapu Venkata Rao",
+    "gender": "Female",
+    "mobile": "9052855647",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10702,
+    "studentName": "Boyidapu Yaswanth",
+    "fatherName": "Boyidapu Satyanarayana",
+    "gender": "Male",
+    "mobile": "9573921693",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10703,
+    "studentName": "Boyidi Pranaya",
+    "fatherName": "Boyidi Bhojanna",
+    "gender": "Female",
+    "mobile": "9908952796",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10704,
+    "studentName": "Boyilla Sobhadevi",
+    "fatherName": "Boyilla Ramireddy",
+    "gender": "Female",
+    "mobile": "9573307073",
+    "category": "OC"
+  },
+  {
+    "studentId": 10705,
+    "studentName": "Boyina Anusha",
+    "fatherName": "Boyina Venkaiah",
+    "gender": "Female",
+    "mobile": "9177163361",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10706,
+    "studentName": "Boyina Charishma",
+    "fatherName": "Boyina Ravi Kumar",
+    "gender": "Female",
+    "mobile": "9885324687",
+    "category": "OC"
+  },
+  {
+    "studentId": 10707,
+    "studentName": "Boyina Durga",
+    "fatherName": "Boyina Srinivasa Rao",
+    "gender": "Female",
+    "mobile": "8643250099",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10708,
+    "studentName": "Boyina Keerthi",
+    "fatherName": "Boyina Koteswara Rao",
+    "gender": "Female",
+    "mobile": "9701785281",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10709,
+    "studentName": "Boyina Lallu Prasad",
+    "fatherName": "Boyina Latchanna",
+    "gender": "Male",
+    "mobile": "9492230818",
+    "category": "ST"
+  },
+  {
+    "studentId": 10710,
+    "studentName": "Boyina Sai Lakshm I",
+    "fatherName": "Boyina Yesu Babu",
+    "gender": "Female",
+    "mobile": "9491647706",
+    "category": "BC-D"
+  },
+  {
+    "studentId": 10711,
+    "studentName": "Boyina Spandana",
+    "fatherName": "Boyina Chandra Bushana Rao",
+    "gender": "Female",
+    "mobile": "9491106876",
+    "category": "OC"
+  },
+  {
+    "studentId": 10712,
+    "studentName": "Boyinipalli Naveena",
+    "fatherName": "B Laxmipathi Rao",
+    "gender": "Female",
+    "mobile": "9959138709",
+    "category": "OC"
+  },
+  {
+    "studentId": 10713,
+    "studentName": "Brahitha Agarwal",
+    "fatherName": "Arvind Kumar Agarwal",
+    "gender": "Female",
+    "mobile": "9848991510",
+    "category": "OC"
+  },
+  {
+    "studentId": 10714,
+    "studentName": "Brahmadevara Ramyakrishna",
+    "fatherName": "Brahmadevara Somaiah",
+    "gender": "Female",
+    "mobile": "9652569691",
+    "category": "OC"
+  },
+  {
+    "studentId": 10715,
+    "studentName": "Brahmadevi Vishnu Swarupa",
+    "fatherName": "Brahmadevi Venkateswarlu",
+    "gender": "Female",
+    "mobile": "9440434524",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10716,
+    "studentName": "Brahmagnani Rajamani",
+    "fatherName": "Brahmagnani Seshagiri",
+    "gender": "Female",
+    "mobile": "9247932969",
+    "category": "OC"
+  },
+  {
+    "studentId": 10717,
+    "studentName": "Brahmajosyula Meena Manoja",
+    "fatherName": "Brahmajosyula Rama Chandra Murthy",
+    "gender": "Female",
+    "mobile": "9866191761",
+    "category": "OC"
+  },
+  {
+    "studentId": 10718,
+    "studentName": "Brahmanapalli Shaik Irshad Ahammed",
+    "fatherName": "Brahmanapalli Shaik Kalimullah",
+    "gender": "Male",
+    "mobile": "7396959506",
+    "category": "BC-E"
+  },
+  {
+    "studentId": 10719,
+    "studentName": "Brahmanapally Manoj Kumar",
+    "fatherName": "B Ramulu",
+    "gender": "Male",
+    "mobile": "9490626261",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10720,
+    "studentName": "Brahmarauthu Kalyani",
+    "fatherName": "Janardhan",
+    "gender": "Female",
+    "mobile": "9959434659",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10721,
+    "studentName": "Brahmasani Sri Sailaja",
+    "fatherName": "Brahmasani L Narayana",
+    "gender": "Female",
+    "mobile": "9866432351",
+    "category": "OC"
+  },
+  {
+    "studentId": 10722,
+    "studentName": "Brahvanlapalli Sai Prasad",
+    "fatherName": "Brahvanlapalli Venkataratnam Chary",
+    "gender": "Male",
+    "mobile": "9642890424",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10723,
+    "studentName": "Bramadandi Sridevi",
+    "fatherName": "Bramadandi Balram",
+    "gender": "Female",
+    "mobile": "9866171288",
+    "category": "OC"
+  },
+  {
+    "studentId": 10724,
+    "studentName": "Bramaroutu Harpreet Varma",
+    "fatherName": "Bramaroutu Mahendra Varma",
+    "gender": "Male",
+    "mobile": "9248565857",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10725,
+    "studentName": "Bramhambatla Kalyani",
+    "fatherName": "Bramhambatla Venkata Narayana Murthy",
+    "gender": "Female",
+    "mobile": "9494251583",
+    "category": "OC"
+  },
+  {
+    "studentId": 10726,
+    "studentName": "Bramharouthu Santosh Varma",
+    "fatherName": "Bramharouthu Venu Varma",
+    "gender": "Male",
+    "mobile": "9550415297",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10727,
+    "studentName": "Bringumalla Manasa",
+    "fatherName": "Bringumalla Satyanarayana",
+    "gender": "Female",
+    "mobile": "8125625318",
+    "category": "OC"
+  },
+  {
+    "studentId": 10728,
+    "studentName": "Brundavanam Gopika",
+    "fatherName": "Brundavanam V Sita Ramacharyulu",
+    "gender": "Female",
+    "mobile": "9502014309",
+    "category": "OC"
+  },
+  {
+    "studentId": 10729,
+    "studentName": "Brundavanam Hemasri",
+    "fatherName": "Brundavanam Raviprasad",
+    "gender": "Female",
+    "mobile": "9440240611",
+    "category": "OC"
+  },
+  {
+    "studentId": 10730,
+    "studentName": "Brunga Nagaraju",
+    "fatherName": "Brunga Nageswararao",
+    "gender": "Male",
+    "mobile": "9985964767",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10731,
+    "studentName": "Brungi Sandeepkumar",
+    "fatherName": "Brungi Subash",
+    "gender": "Male",
+    "mobile": "9948894227",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10732,
+    "studentName": "Brungi Tharun Kumar",
+    "fatherName": "Brungi Umamaheswar",
+    "gender": "Male",
+    "mobile": "9989903540",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10733,
+    "studentName": "Bs Loka Sree",
+    "fatherName": "B Sreenivasulu Naidu",
+    "gender": "Female",
+    "mobile": "9440194569",
+    "category": "OC"
+  },
+  {
+    "studentId": 10734,
+    "studentName": "Bshiva Goud",
+    "fatherName": "B Kumargoud",
+    "gender": "Male",
+    "mobile": "9399961909",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10735,
+    "studentName": "Bsupraja",
+    "fatherName": "Bnarender",
+    "gender": "Female",
+    "mobile": "9908999552",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10736,
+    "studentName": "Bucchimgari Lokesh",
+    "fatherName": "Bucchimgari Narasimha Rao",
+    "gender": "Male",
+    "mobile": "9441804856",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10737,
+    "studentName": "Bucha Bhavani",
+    "fatherName": "Bucha Appalanaidu",
+    "gender": "Female",
+    "mobile": "9701282544",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10738,
+    "studentName": "Buchagari Sonali",
+    "fatherName": "Buchagari Raju",
+    "gender": "Female",
+    "mobile": "9912493743",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10739,
+    "studentName": "Buchala Venu Kumar",
+    "fatherName": "B Padmaiah Goud",
+    "gender": "Male",
+    "mobile": "9290301430",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 10740,
+    "studentName": "Buchayya Gari Bhargavi",
+    "fatherName": "Buchayya Gari Bhagavantha Reddy",
+    "gender": "Female",
+    "mobile": "9989171390",
+    "category": "OC"
+  },
+  {
+    "studentId": 10741,
+    "studentName": "Buchiraju Nagaraju",
+    "fatherName": "Buchiraju Srinivasarao",
+    "gender": "Male",
+    "mobile": "9989285716",
+    "category": "BC-A"
+  },
+  {
+    "studentId": 10742,
+    "studentName": "Buchireddy Vijayalakshmi",
+    "fatherName": "Buchireddy Mahipalreddy",
+    "gender": "Female",
+    "mobile": "9440868195",
+    "category": "OC"
+  },
+  {
+    "studentId": 10743,
+    "studentName": "Buchireddygari Deepika",
+    "fatherName": "Buchireddygari Vishnuvardhan Reddy",
+    "gender": "Female",
+    "mobile": "9912370880",
+    "category": "OC"
+  },
+  {
+    "studentId": 10744,
+    "studentName": "Buchupalli Amala",
+    "fatherName": "Buchupalli Sreedhar Reddy",
+    "gender": "Female",
+    "mobile": "9393933144",
+    "category": "OC"
+  },
+  {
+    "studentId": 10745,
+    "studentName": "Buchupalli Gouthami",
+    "fatherName": "B Vijayabhaskarreddy",
+    "gender": "Female",
+    "mobile": "9441105459",
+    "category": "OC"
+  },
+  {
+    "studentId": 10746,
+    "studentName": "Buchupalli Udaysree",
+    "fatherName": "B Sreekanthreddy",
+    "gender": "Female",
+    "mobile": "9542995990",
+    "category": "OC"
+  },
+  {
+    "studentId": 10747,
+    "studentName": "Budaati Meghanath",
+    "fatherName": "Budaati Vekat Ramanarao",
+    "gender": "Male",
+    "mobile": "9032139805",
+    "category": "BC-B"
+  },
+  {
+    "studentId": 77052,
+    "studentName": "Zuleqa Sultana",
+    "fatherName": "Mohammed Rafeeq",
+    "gender": "Female",
+    "mobile": "7799447537",
+    "category": "OC"
+  }
+]

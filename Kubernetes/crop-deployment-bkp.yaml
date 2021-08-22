@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-rest-oracle-k8s
+  namespace: spring-boot-rest-k8s
+  labels:
+    app: spring-rest-oracle-k8s
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: spring-rest-oracle-k8s
+      labels:
+        app: spring-rest-oracle-k8s
+    spec:
+      containers:
+        - name: spring-rest-oracle-k8s
+          image: harilearning1989/spring-rest-oracle-k8s:5
+          imagePullPolicy: IfNotPresent
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: spring-rest-oracle-k8s
