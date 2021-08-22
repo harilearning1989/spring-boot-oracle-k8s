@@ -1,0 +1,27 @@
+#kubectl get deploy -o wide
+#kubectl get pod -o wide
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-deployment
+  namespace: spring-boot-oracle-k8s
+  labels:
+    app: spring-deployment-app
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: spring-pod
+      labels:
+        app: spring-deployment-app
+    spec:
+      containers:
+        - name: spring-container
+          image: harilearning1989/spring-boot-oracle-k8s:16
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: spring-deployment-app

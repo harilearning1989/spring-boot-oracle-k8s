@@ -1,0 +1,16 @@
+#kubectl get svc -o wide
+apiVersion: v1
+kind: Service
+metadata:
+  name: spring-service
+  namespace: spring-boot-oracle-k8s
+spec:
+  ports:
+    - name: spring-port
+      port: 8081
+      protocol: TCP
+      targetPort: 8081
+  selector:
+    app: spring-deployment-app
+  type: ClusterIP
+#type: NodePort
