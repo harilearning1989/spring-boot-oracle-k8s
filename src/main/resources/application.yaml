@@ -22,5 +22,9 @@ spring:
           enable_lazy_load_no_trans: true
       database-platform: org.hibernate.dialect.Oracle12cDialect
 
+user:
+  address:
+    name: ${USER_NAME}
+
 
 

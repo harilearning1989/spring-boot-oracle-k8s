@@ -21,6 +21,12 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
+          env:
+            - name: USER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: config-key
       restartPolicy: Always
   selector:
     matchLabels:

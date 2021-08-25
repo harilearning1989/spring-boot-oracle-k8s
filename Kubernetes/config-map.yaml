@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spring-config
+  namespace: spring-boot-oracle-k8s
+data:
+  config-key: Hello Hari Krishna Reddy
