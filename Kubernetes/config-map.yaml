@@ -10,5 +10,3 @@ data:
   oracle-driver: oracle.jdbc.driver.OracleDriver
   user-name: SYSTEM
   password: dudkrish1A
-  show-sql: Yes
-  format-sql: Yes

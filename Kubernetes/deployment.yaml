@@ -52,16 +52,6 @@ spec:
                 configMapKeyRef:
                   name: spring-config
                   key: password
-            - name: SHOW_SQL
-              valueFrom:
-                configMapKeyRef:
-                  name: spring-config
-                  key: show-sql
-            - name: FORMAT_SQL
-              valueFrom:
-                configMapKeyRef:
-                  name: spring-config
-                  key: format-sql
       restartPolicy: Always
   selector:
     matchLabels:
