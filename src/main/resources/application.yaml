@@ -25,6 +25,8 @@ spring:
 user:
   address:
     name: ${EMP_NAME}
+    userName: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
 
 

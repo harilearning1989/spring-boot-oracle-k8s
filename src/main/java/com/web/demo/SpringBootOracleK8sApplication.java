@@ -52,14 +52,10 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
                 .retrieve();
         String responseBody = responseSpec.bodyToMono(String.class).block();
         System.out.println("responseBody===" + responseBody);
-        System.out.println("Application Name===="+getApplicationName());
-        Post post = new Post();
-        post.setBody("Post Body");
-        post.setTitle("Post Title");
-        post.setUserId(123);
-        //create(post);
-        //getPost();
-        //getPostById(10);
+
+        System.out.println("Application Name===="+getPropertyFromKey("spring.application.name"));
+        System.out.println("User Name===="+getPropertyFromKey("user.address.userName"));
+        System.out.println("Password===="+getPropertyFromKey("user.address.password"));
     }
 
     private void getPostById(int i) {
@@ -79,7 +75,7 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
     public void create(Post post) {
     }
 
-    private String getApplicationName() {
-        return this.environment.getProperty("spring.application.name");
+    private String getPropertyFromKey(String key) {
+        return this.environment.getProperty(key);
     }
 }
