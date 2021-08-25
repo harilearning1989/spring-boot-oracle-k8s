@@ -12,8 +12,8 @@ spring:
     driver-class-name: ${ORACLE_DRIVER}
     #username: ORACLE_DEMO
     #password: dudkrish1A
-    username: ${USER_NAME}
-    password: ${PASSWORD}
+    username: ${ORACLE_USER_NAME}
+    password: ${ORACLE_PASSWORD}
     jpa:
       show-sql: true
       format-sql: true

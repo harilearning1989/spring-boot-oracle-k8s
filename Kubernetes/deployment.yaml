@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: harilearning1989/spring-boot-oracle-k8s:15
+          image: harilearning1989/spring-boot-oracle-k8s:17
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
@@ -42,16 +42,26 @@ spec:
                 configMapKeyRef:
                   name: spring-config
                   key: oracle-driver
-            - name: USER_NAME
+            - name: ORACLE_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: oracle-user-name
+            - name: ORACLE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: oracle-password
+            - name: ORACLE_USER_NAME1
               valueFrom:
                 configMapKeyRef:
                   name: spring-config
-                  key: user-name
-            - name: PASSWORD
+                  key: oracle-user-name
+            - name: ORACLE_PASSWORD1
               valueFrom:
                 configMapKeyRef:
                   name: spring-config
-                  key: password
+                  key: oracle-password
             - name: DB_USERNAME
               valueFrom:
                 secretKeyRef:
