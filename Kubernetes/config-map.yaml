@@ -4,5 +4,11 @@ metadata:
   name: spring-config
   namespace: spring-boot-oracle-k8s
 data:
-  config-key: Hello Hari Krishna Reddy From Config Map
+  emp-name: Hello Hari Krishna Reddy From Config Map
   application-name: spring-rest-oracle-k8s
+  oracle-url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1
+  oracle-driver: oracle.jdbc.driver.OracleDriver
+  user-name: SYSTEM
+  password: dudkrish1A
+  show-sql: true
+  format-sql: true

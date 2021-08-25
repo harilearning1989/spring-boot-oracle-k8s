@@ -22,16 +22,46 @@ spec:
           ports:
             - containerPort: 8081
           env:
-            - name: USER_NAME
+            - name: EMP_NAME
               valueFrom:
                 configMapKeyRef:
                   name: spring-config
-                  key: config-key
+                  key: emp-name
             - name: APPLICATION_NAME
               valueFrom:
                 configMapKeyRef:
                   name: spring-config
                   key: application-name
+            - name: ORACLE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-url
+            - name: ORACLE_DRIVER
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-driver
+            - name: USER_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: user-name
+            - name: PASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: password
+            - name: SHOW_SQL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: show-sql
+            - name: FORMAT_SQL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: format-sql
       restartPolicy: Always
   selector:
     matchLabels:

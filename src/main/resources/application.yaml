@@ -8,15 +8,15 @@ spring:
   datasource:
     #url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1
     #url: jdbc:oracle:thin:@localhost:1521:orcl
-    url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: ${ORACLE_URL}
+    driver-class-name: ${ORACLE_DRIVER}
     #username: ORACLE_DEMO
     #password: dudkrish1A
-    username: SYSTEM
-    password: dudkrish1A
+    username: ${USER_NAME}
+    password: ${PASSWORD}
     jpa:
-      show-sql: true
-      format-sql: true
+      show-sql: ${SHOW_SQL}
+      format-sql: ${FORMAT_SQL}
       properties:
         hibernate:
           enable_lazy_load_no_trans: true
@@ -24,7 +24,7 @@ spring:
 
 user:
   address:
-    name: ${USER_NAME}
+    name: ${EMP_NAME}
 
 
 
