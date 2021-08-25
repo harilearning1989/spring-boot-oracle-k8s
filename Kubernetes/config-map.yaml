@@ -4,4 +4,5 @@ metadata:
   name: spring-config
   namespace: spring-boot-oracle-k8s
 data:
-  config-key: Hello Hari Krishna Reddy
+  config-key: Hello Hari Krishna Reddy From Config Map
+  application-name: spring-rest-oracle-k8s

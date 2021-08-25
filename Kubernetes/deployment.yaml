@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: harilearning1989/spring-boot-oracle-k8s:16
+          image: harilearning1989/spring-boot-oracle-k8s:10
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
@@ -27,6 +27,11 @@ spec:
                 configMapKeyRef:
                   name: spring-config
                   key: config-key
+            - name: APPLICATION_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: application-name
       restartPolicy: Always
   selector:
     matchLabels:

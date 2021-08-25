@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.core.env.Environment;
 import org.springframework.web.reactive.function.client.WebClient;
 
 @SpringBootApplication
@@ -27,6 +28,12 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
         this.webClientBuilder = webClientBuilder;
     }
 
+    private final Environment environment;
+
+    public SpringBootOracleK8sApplication(final Environment environment) {
+        this.environment = environment;
+    }
+
     @Override
     public void run(String... args) throws Exception {
         System.out.println("SpringBootOracleK8sApplication run Method ");
@@ -45,7 +52,7 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
                 .retrieve();
         String responseBody = responseSpec.bodyToMono(String.class).block();
         System.out.println("responseBody===" + responseBody);
-
+        System.out.println("Application Name===="+getApplicationName());
         Post post = new Post();
         post.setBody("Post Body");
         post.setTitle("Post Title");
@@ -70,5 +77,9 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
     }
 
     public void create(Post post) {
+    }
+
+    private String getApplicationName() {
+        return this.environment.getProperty("spring.application.name");
     }
 }

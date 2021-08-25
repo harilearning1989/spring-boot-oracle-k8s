@@ -2,7 +2,7 @@ server:
   port: 8081
 spring:
   application:
-    name: spring-rest-oracle-k8s
+    name: ${APPLICATION_NAME}
   main:
     banner-mode: off
   datasource:
