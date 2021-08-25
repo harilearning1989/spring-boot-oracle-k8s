@@ -15,8 +15,8 @@ spring:
     username: ${USER_NAME}
     password: ${PASSWORD}
     jpa:
-      show-sql: ${SHOW_SQL}
-      format-sql: ${FORMAT_SQL}
+      show-sql: true
+      format-sql: true
       properties:
         hibernate:
           enable_lazy_load_no_trans: true

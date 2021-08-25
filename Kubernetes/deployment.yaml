@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: harilearning1989/spring-boot-oracle-k8s:10
+          image: harilearning1989/spring-boot-oracle-k8s:13
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
