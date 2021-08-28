@@ -1,21 +1,19 @@
 server:
-  port: 8081
+  port: ${SERVER_PORT}
 spring:
-  profiles:
-    active: dev
   application:
-    name: spring-rest-oracle-k8s
+    name: ${APPLICATION_NAME}
   main:
     banner-mode: off
   datasource:
     #url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1
     #url: jdbc:oracle:thin:@localhost:1521:orcl
-    url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1
-    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: ${ORACLE_URL}
+    driver-class-name: ${ORACLE_DRIVER}
     #username: ORACLE_DEMO
     #password: dudkrish1A
-    username: SYSTEM
-    password: dudkrish1A
+    username: ${ORACLE_USER_NAME}
+    password: ${ORACLE_PASSWORD}
     jpa:
       show-sql: true
       format-sql: true
@@ -26,9 +24,9 @@ spring:
 
 user:
   address:
-    name: Hari From Dev
-    userName: UserName From Dev
-    password: Password From Dev
+    name: ${EMP_NAME}
+    userName: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
 
 
 

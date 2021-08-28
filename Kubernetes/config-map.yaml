@@ -4,6 +4,7 @@ metadata:
   name: spring-config
   namespace: spring-boot-oracle-k8s
 data:
+  server-port: 8081
   emp-name: Hello Hari Krishna Reddy From Config Map
   application-name: spring-rest-oracle-k8s
   oracle-url: jdbc:oracle:thin:@192.168.1.200:1521:cdb1

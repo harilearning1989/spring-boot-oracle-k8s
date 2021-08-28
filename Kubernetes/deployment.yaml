@@ -21,6 +21,9 @@ spec:
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
+          volumeMounts:
+            - mountPath: /var/tempData
+              name: spring-volume
           env:
             - name: EMP_NAME
               valueFrom:
@@ -72,6 +75,16 @@ spec:
                 secretKeyRef:
                   name: spring-secret
                   key: password
+            - name: SERVER_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: server-port
+      volumes:
+        - name: spring-volume
+          hostPath:
+            path: /MyWork/tempData
+            type: Directory
       restartPolicy: Always
   selector:
     matchLabels:
