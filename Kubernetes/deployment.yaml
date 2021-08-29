@@ -20,12 +20,12 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: harilearning1989/spring-boot-oracle-k8s:22
+          image: harilearning1989/spring-boot-oracle-k8s:24
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
           volumeMounts:
-            - mountPath: /var/tempData
+            - mountPath: /var/DataFiles/csv
               name: spring-volume
           env:
             - name: EMP_NAME
@@ -83,9 +83,29 @@ spec:
                 configMapKeyRef:
                   name: spring-config
                   key: server-port
+            - name: GIT_HUB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: gitHubUrl
+            - name: WINDOWS_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: windPrefix
+            - name: LINUX_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: linuxPrefix
+            - name: MAC_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: macPrefix
       volumes:
         - name: spring-volume
           hostPath:
-            path: /MyWork/tempData
+            path: /home/hari/MyWork/DataFiles/csv/
             type: Directory
       restartPolicy: Always

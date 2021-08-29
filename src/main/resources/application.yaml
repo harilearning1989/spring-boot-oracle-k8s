@@ -1,8 +1,8 @@
 server:
   port: 8081
 spring:
-  #profiles:
-   # active: dev
+  profiles:
+    active: dev
   application:
     name: spring-rest-oracle-k8s
   main:
@@ -35,7 +35,7 @@ csv:
     gitHubUrl: https://raw.githubusercontent.com/harilearning1989/DataFiles/master/
     windPrefix: D:/DataFiles/Downloaded/
     linuxPrefix: /home/hari/MyWork/DataFiles/
-    macPrefix: Mac Location
+    macPrefix: Mac Location Development
 
 
 

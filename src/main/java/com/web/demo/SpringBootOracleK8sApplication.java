@@ -58,6 +58,10 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
         System.out.println("Password===="+getPropertyFromKey("user.address.password"));
         System.out.println("Oracle User Name==="+getPropertyFromKey("spring.datasource.username"));
         System.out.println("Oracle Password==="+getPropertyFromKey("spring.datasource.password"));
+
+        System.out.println("Windows==="+getPropertyFromKey("csv.read.windPrefix"));
+        System.out.println("Linux==="+getPropertyFromKey("csv.read.linuxPrefix"));
+        System.out.println("Mac==="+getPropertyFromKey("csv.read.macPrefix"));
     }
 
     private void getPostById(int i) {

@@ -28,5 +28,12 @@ user:
     userName: ${DB_USERNAME}
     password: ${DB_PASSWORD}
 
+csv:
+  read:
+    gitHubUrl: ${GIT_HUB_URL}
+    windPrefix: ${WINDOWS_PREFIX}
+    linuxPrefix: ${LINUX_PREFIX}
+    macPrefix: ${MAC_PREFIX}
+
 
 

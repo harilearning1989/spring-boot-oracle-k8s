@@ -1,0 +1,159 @@
+kubectl get namespace
+kubectl delete namespace spring-boot-oracle-k8s
+kubectl create namespace spring-boot-oracle-k8s
+
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+kubectl apply -f config-map.yaml
+kubectl get all -n spring-boot-oracle-k8s
+
+kubectl describe namespaces spring-boot-oracle-k8s
+kubectl describe configmap spring-config -n spring-boot-oracle-k8s
+
+#kubectl get deploy -o wide
+#kubectl get pod -o wide
+#kubectl get svc -o wide
+
+kubectl get all -n spring-boot-oracle-k8s
+kubectl logs pod/spring-deployment-7c66579b46-4bkhx -n spring-boot-oracle-k8s
+curl http://192.168.1.200:8081/employee/getall
+curl http://10.104.231.15:8081/employee/getall
+kubectl port-forward service/spring-service  8081:8081 -n spring-boot-oracle-k8s
+
+kubectl get deployments
+kubectl get rs
+kubectl get pods --show-labels
+
+kubectl get svc -o wide -n spring-boot-oracle-k8s
+
+curl http://localhost:8081/employee/getall
+
+echo -n 'SYSTEM' | base64
+U1lTVEVN
+echo -n 'U1lTVEVN' | base64 --decode
+echo -n 'dudkrish1A' | base64
+ZHVka3Jpc2gxQQ==
+echo -n 'ZHVka3Jpc2gxQQ==' | base64 --decode
+
+kubectl get pods -o wide
+
+sudo docker ps -a
+docker exec -it 862f6101975b sh
+docker run -v /MyWork/DataFiles/csv:/home/hari/MyWork/DataFiles/
+docker run -v /home/hari/MyWork/DataFiles/
+docker run -v name:/home/hari/MyWork/DataFiles/
+docker run -p 8081:8081 harilearning1989/spring-boot-oracle-k8s:23
+
+=========================================================================================
+kubectl get po -A
+minikube kubectl -- get po -A
+minikube dashboard
+
+kubectl create deployment hello-minikube --image=k8s.gcr.io/echoserver:1.4
+kubectl expose deployment hello-minikube --type=NodePort --port=8080
+
+kubectl get services hello-minikube
+minikube service hello-minikube
+kubectl port-forward service/hello-minikube 7080:8080
+
+kubectl create deployment balanced --image=k8s.gcr.io/echoserver:1.4  
+kubectl expose deployment balanced --type=LoadBalancer --port=8080
+
+minikube tunnel
+
+kubectl get services balanced
+
+minikube pause
+
+minikube stop
+
+minikube config set memory 16384
+
+minikube addons list
+minikube start -p aged --kubernetes-version=v1.16.1
+minikube delete --all
+
+http://learning-madeeasy.blogspot.com/2020/10/kubernetes-hello-world-example-with.html
+kubectl get pods --all-namespaces
+kubectl get nodes
+kubectl create namespace spring-rest-crop
+kubectl create deployment spring-rest-crop --image=harilearning1989/spring-rest-crop:9 --dry-run -o=yaml > deployment.yaml
+kubectl create service clusterip spring-rest-crop --tcp=8081:8081 --dry-run -o=yaml > service.yaml
+kubectl create -f deployment.yaml  -n spring-rest-crop
+kubectl create -f service.yaml  -n spring-rest-crop
+kubectl get all -n spring-rest-crop
+kubectl logs pod/spring-rest-crop-6d67bf5cd-45smp -n spring-rest-crop
+
+curl localhost:8081/crops/readCrop
+kubectl port-forward service/spring-rest-crop  8081:8081 -n spring-rest-crop
+----------------------------------------------------------------------------------------
+kubectl create namespace spring-rest-students
+kubectl create deployment spring-rest-students --image=harilearning1989/spring-rest-students:3 --dry-run -o=yaml > deployment.yaml
+kubectl create service clusterip spring-rest-students --tcp=8083:8083 --dry-run -o=yaml > service.yaml
+kubectl create -f deployment.yaml  -n spring-rest-students
+kubectl create -f service.yaml  -n spring-rest-students
+kubectl get all -n spring-rest-students
+kubectl logs pod/spring-rest-student-7c8bf74f6c-d4z67 -n spring-rest-students
+
+curl localhost:8083/students/readStudents
+kubectl port-forward service/spring-rest-student  8083:8083 -n spring-rest-student
+--------------------------------------------------------------------------------------------------
+kubectl create namespace spring-rest-sales
+kubectl create deployment spring-rest-sales --image=harilearning1989/spring-rest-sales:2 --dry-run -o=yaml > deployment.yaml
+kubectl create service clusterip spring-rest-sales --tcp=8082:8082 --dry-run -o=yaml > service.yaml
+kubectl create -f deployment.yaml  -n spring-rest-sales
+kubectl create -f service.yaml  -n spring-rest-sales
+kubectl get all -n spring-rest-sales
+kubectl logs pod/spring-rest-sales-598bd699dc-94vz8 -n spring-rest-sales
+curl localhost:8082/sales/readSales
+kubectl port-forward service/spring-rest-sales  8082:8082 -n spring-rest-sales
+
+kubectl delete services my-service
+kubectl delete deployment hello-world
+
+kubectl get services service/spring-rest-sales
+
+
+kubectl get namespace
+#kubectl get deploy -o wide
+#kubectl get pod -o wide
+#kubectl get svc -o wide
+kubectl get all -n spring-boot-oracle-k8s
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+kubectl logs pod/spring-deployment-6d77dc4c8c-m6zlf -n spring-boot-oracle-k8s
+curl http://192.168.1.200:8081/employee/getall
+curl http://10.104.231.15:8081/employee/getall
+kubectl port-forward service/spring-service  8081:8081 -n spring-boot-oracle-k8s
+
+kubectl get deployments
+kubectl get rs
+kubectl get pods --show-labels
+
+docker exec -it 862f6101975b sh
+
+================================================================================
+
+sudo kubectl exec -ti mykubernetes-springboot-6f8558698d-k4ns7 bash
+sudo kubectl exec mykubernetes-springboot-6f8558698d-k4ns7 env
+
+kubectl describe pod spring-rest-oracle
+
+kubectl delete daemonsets,replicasets,services,deployments,pods,rc --all
+
+docker run -p 8081:8081 harilearning1989/spring-rest-crop:9
+docker run -p 8083:8083 harilearning1989/spring-rest-students:3
+docker run -p 8082:8082 harilearning1989/spring-rest-sales:2
+
+docker run -it -p 8080:8080 -v path/of/hostmachine:/containerpath --name containername imagename
+docker run --rm -it -p 8080:8080 -v path/of/hostmachine:/containerpath --name containername imagename //remove  container
+sudo docker run --name JenkinsDemo -v /jenkinsVolume:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins
+
+working for Jenkins
+sudo docker run -u 0 --name JenkinsDemo -v /jenkinsVolume:/var/jenkins_home -p 8080:8080 -p 50000:50000 jenkins/jenkins
+
+=====================================================================
+
+docker exec -it 862f6101975b sh
+

@@ -11,3 +11,7 @@ data:
   oracle-driver: oracle.jdbc.driver.OracleDriver
   oracle-user-name: SYSTEM
   oracle-password: dudkrish1A
+  gitHubUrl: https://raw.githubusercontent.com/harilearning1989/DataFiles/master/
+  windPrefix: D:/DataFiles/Downloaded/
+  linuxPrefix: /home/hari/MyWork/DataFiles/
+  macPrefix: Mac Location Config Map
