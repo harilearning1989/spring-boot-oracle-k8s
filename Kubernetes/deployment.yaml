@@ -9,6 +9,9 @@ metadata:
     app: spring-deployment-app
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: spring-deployment-app
   template:
     metadata:
       name: spring-pod
@@ -17,7 +20,7 @@ spec:
     spec:
       containers:
         - name: spring-container
-          image: harilearning1989/spring-boot-oracle-k8s:20
+          image: harilearning1989/spring-boot-oracle-k8s:22
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8081
@@ -86,6 +89,3 @@ spec:
             path: /MyWork/tempData
             type: Directory
       restartPolicy: Always
-  selector:
-    matchLabels:
-      app: spring-deployment-app

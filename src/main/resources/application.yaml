@@ -1,8 +1,8 @@
 server:
   port: 8081
 spring:
-  profiles:
-    active: dev
+  #profiles:
+   # active: dev
   application:
     name: spring-rest-oracle-k8s
   main:
@@ -29,6 +29,13 @@ user:
     name: Hari From Dev
     userName: UserName From Dev
     password: Password From Dev
+
+csv:
+  read:
+    gitHubUrl: https://raw.githubusercontent.com/harilearning1989/DataFiles/master/
+    windPrefix: D:/DataFiles/Downloaded/
+    linuxPrefix: /home/hari/MyWork/DataFiles/
+    macPrefix: Mac Location
 
 
 

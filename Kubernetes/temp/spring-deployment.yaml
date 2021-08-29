@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment                    # Type of the kubernetes resource
+metadata:
+  name: spring-deployment           # Name of the deployment
+  namespace: spring-boot-oracle-k8s
+  labels:                           # Labels applied to this deployment
+    app: spring-deployment-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:                    # This deployment applies to the Pods matching the specified labels
+      app: spring-deployment-app
+  strategy:
+    type: Recreate
+  template:                         # Template for the Pods in this deployment
+    metadata:
+      name: spring-pod
+      labels:                       # Labels to be applied to the Pods in this deployment
+        app: spring-deployment-app
+    spec:                           # The spec for the containers that will be run inside the Pods in this deployment
+      containers:
+        - name: spring-container
+          image: harilearning1989/spring-boot-oracle-k8s:22   # The container image
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          volumeMounts:
+            - name: spring-volume
+              mountPath: /var/tempData
+          env:                        # Environment variables passed to the container
+            - name: MYSQL_ROOT_PASSWORD
+              valueFrom:                # Read environment variables from kubernetes secrets
+                secretKeyRef:
+                  name: mysql-root-pass
+                  key: password
+            - name: MYSQL_DATABASE
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-db-url
+                  key: database
+            - name: MYSQL_USER
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-user-pass
+                  key: username
+            - name: MYSQL_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-user-pass
+                  key: password
+      volumes:                       # A PersistentVolume is mounted as a volume to the Pod
+        - name: spring-volume
+          persistentVolumeClaim:
+            claimName: spring-pv-claim
+      restartPolicy: Always

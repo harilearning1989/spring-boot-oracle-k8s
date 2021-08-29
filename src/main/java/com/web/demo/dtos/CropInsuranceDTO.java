@@ -2,7 +2,7 @@ package com.web.demo.dtos;
 
 public class CropInsuranceDTO {
 
-    private int serialNumber;
+    private int id;
     private String mandalName;
     private String villageName;
     private String nameOfTheBeneficiary;
@@ -14,12 +14,12 @@ public class CropInsuranceDTO {
     private String branchName;
     private String accountNumber;
 
-    public int getSerialNumber() {
-        return serialNumber;
+    public int getId() {
+        return id;
     }
 
-    public void setSerialNumber(int serialNumber) {
-        this.serialNumber = serialNumber;
+    public void setId(int serialNumber) {
+        this.id = serialNumber;
     }
 
     public String getMandalName() {
