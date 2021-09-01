@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-rest-crop
+  namespace: spring-boot-oracle-k8s
+  labels:
+    app: spring-rest-crop
+spec:
+  replicas: 1
+  template:
+    metadata:
+      name: spring-rest-crop
+      labels:
+        app: spring-rest-crop
+    spec:
+      containers:
+        - name: spring-rest-crop
+          image: harilearning1989/spring-rest-crop:9
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - mountPath: "/usr"
+              name: www-data
+      initContainers:
+        - name: git-cloner
+          image: alpine/git
+          args:
+            - clone
+            - --single-branch
+            - --
+            - https://github.com/harilearning1989/DataFiles.git
+            - /DataFiles
+          volumeMounts:
+            - mountPath: /DataFiles
+              name: www-data
+      volumes:
+        - name: www-data
+          emptyDir: { }
+      restartPolicy: Always
+  selector:
+    matchLabels:
+      app: spring-rest-crop

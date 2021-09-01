@@ -15,7 +15,7 @@ kubectl describe configmap spring-config -n spring-boot-oracle-k8s
 #kubectl get svc -o wide
 
 kubectl get all -n spring-boot-oracle-k8s
-kubectl logs pod/spring-deployment-7c66579b46-4bkhx -n spring-boot-oracle-k8s
+kubectl logs pod/spring-rest-crop-59697dcf7f-vblb6 -n spring-boot-oracle-k8s
 curl http://192.168.1.200:8081/employee/getall
 curl http://10.104.231.15:8081/employee/getall
 kubectl port-forward service/spring-service  8081:8081 -n spring-boot-oracle-k8s
@@ -160,3 +160,7 @@ docker exec -it 862f6101975b sh
 kubectl get pv
 kubectl get pvc
 kubectl get pod -o wide
+
+kubectl get pods -n spring-boot-oracle-k8s
+kubectl exec -it -n spring-boot-oracle-k8s nginx-helloworld sh
+kubectl describe pod nginx-helloworld -n spring-boot-oracle-k8s
