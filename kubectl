@@ -157,3 +157,6 @@ sudo docker run -u 0 --name JenkinsDemo -v /jenkinsVolume:/var/jenkins_home -p 8
 
 docker exec -it 862f6101975b sh
 
+kubectl get pv
+kubectl get pvc
+kubectl get pod -o wide
