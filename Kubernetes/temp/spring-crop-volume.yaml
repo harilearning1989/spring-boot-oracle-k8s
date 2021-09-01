@@ -13,29 +13,33 @@ spec:
       labels:
         app: spring-rest-crop
     spec:
-      containers:
-        - name: spring-rest-crop
-          image: harilearning1989/spring-rest-crop:9
-          imagePullPolicy: IfNotPresent
-          volumeMounts:
-            - mountPath: "/usr"
-              name: www-data
       initContainers:
-        - name: git-cloner
+        - name: git-clone
           image: alpine/git
           args:
             - clone
             - --single-branch
             - --
             - https://github.com/harilearning1989/DataFiles.git
-            - /DataFiles
+            - /repo
+          securityContext:
+            runAsUser: 1
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
           volumeMounts:
-            - mountPath: /DataFiles
-              name: www-data
-      volumes:
-        - name: www-data
-          emptyDir: { }
+            - name: git-repo
+              mountPath: /repo
+      containers:
+        - name: spring-rest-crop
+          image: harilearning1989/spring-rest-crop:9
+          imagePullPolicy: IfNotPresent
+          volumeMounts:
+            - mountPath: "/usr"
+              name: git-repo
       restartPolicy: Always
+      volumes:
+        - name: git-repo
+          emptyDir: { }
   selector:
     matchLabels:
       app: spring-rest-crop

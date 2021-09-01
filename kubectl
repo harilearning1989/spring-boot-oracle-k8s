@@ -162,5 +162,10 @@ kubectl get pvc
 kubectl get pod -o wide
 
 kubectl get pods -n spring-boot-oracle-k8s
-kubectl exec -it -n spring-boot-oracle-k8s nginx-helloworld sh
 kubectl describe pod nginx-helloworld -n spring-boot-oracle-k8s
+
+below command working to inspect the pod
+kubectl exec -it pod/git-repo-demo -n spring-boot-oracle-k8s -- sh
+kubectl exec -it pod/spring-rest-crop-85b6dc669-x7ssg -n spring-boot-oracle-k8s -- sh
+kubectl logs pod/git-repo-demo -n spring-boot-oracle-k8s
+
