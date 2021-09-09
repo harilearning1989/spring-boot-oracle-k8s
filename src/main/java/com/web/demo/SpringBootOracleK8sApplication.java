@@ -2,6 +2,7 @@ package com.web.demo;
 
 import com.web.demo.dtos.Post;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -62,6 +63,42 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
         System.out.println("Windows==="+getPropertyFromKey("csv.read.windPrefix"));
         System.out.println("Linux==="+getPropertyFromKey("csv.read.linuxPrefix"));
         System.out.println("Mac==="+getPropertyFromKey("csv.read.macPrefix"));
+
+        //Operating system name
+        System.out.println(System.getProperty("os.name"));
+
+        //Operating system version
+        System.out.println(System.getProperty("os.version"));
+
+        //Path separator character used in java.class.path
+        System.out.println(System.getProperty("path.separator"));
+
+        //User working directory
+        System.out.println(System.getProperty("user.dir"));
+
+        //User home directory
+        System.out.println(System.getProperty("user.home"));
+
+        //User account name
+        System.out.println(System.getProperty("user.name"));
+
+        //Operating system architecture
+        System.out.println(System.getProperty("os.arch"));
+
+        //Sequence used by operating system to separate lines in text files
+        System.out.println(System.getProperty("line.separator"));
+
+        System.out.println(System.getProperty("java.version")); //JRE version number
+
+        System.out.println(System.getProperty("java.vendor.url")); //JRE vendor URL
+
+        System.out.println(System.getProperty("java.vendor")); //JRE vendor name
+
+        System.out.println(System.getProperty("java.home")); //Installation directory for Java Runtime Environment (JRE)
+
+        System.out.println(System.getProperty("java.class.path"));
+
+        System.out.println(System.getProperty("file.separator"));
     }
 
     private void getPostById(int i) {
@@ -73,6 +110,14 @@ public class SpringBootOracleK8sApplication implements CommandLineRunner {
                 .retrieve();
         Post responseBody = responseSpec.bodyToMono(Post.class).block();
         System.out.println("responseBody===" + responseBody.toString());
+    }
+
+    @Bean
+    public ApplicationRunner osLogger(Environment environment){
+        return (arguments) -> {
+            System.out.println("OS Version==="+environment.getProperty("os.version")+
+                    "===OS Name==="+environment.getProperty("os.name"));
+        };
     }
 
     private void getPost() {

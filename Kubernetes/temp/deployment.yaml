@@ -1,0 +1,116 @@
+#kubectl get deploy -o wide
+#kubectl get pod -o wide
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-deployment
+  namespace: spring-boot-oracle-k8s
+  labels:
+    app: spring-deployment-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-deployment-app
+  template:
+    metadata:
+      name: spring-pod
+      labels:
+        app: spring-deployment-app
+    spec:
+      containers:
+        - name: spring-container
+          image: harilearning1989/spring-boot-oracle-k8s:24
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081
+          volumeMounts:
+            - mountPath: /var/DataFiles/csv
+              name: spring-volume
+            - name: www-persistent-storage
+              mountPath: /home/vagrant/storage
+          env:
+            - name: EMP_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: emp-name
+            - name: APPLICATION_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: application-name
+            - name: ORACLE_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-url
+            - name: ORACLE_DRIVER
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-driver
+            - name: ORACLE_USER_NAME
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: oracle-user-name
+            - name: ORACLE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: oracle-password
+            - name: ORACLE_USER_NAME1
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-user-name
+            - name: ORACLE_PASSWORD1
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: oracle-password
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: spring-secret
+                  key: password
+            - name: SERVER_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: server-port
+            - name: GIT_HUB_URL
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: gitHubUrl
+            - name: WINDOWS_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: windPrefix
+            - name: LINUX_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: linuxPrefix
+            - name: MAC_PREFIX
+              valueFrom:
+                configMapKeyRef:
+                  name: spring-config
+                  key: macPrefix
+      volumes:
+        - name: spring-volume
+          hostPath:
+            path: /home/hari/MyWork/DataFiles/csv/
+            type: Directory
+        #- name: www-persistent-storage
+        #    persistentVolumeClaim:
+        #      claimName: spring-pvc
+      restartPolicy: Always
